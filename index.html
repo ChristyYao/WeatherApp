@@ -19,17 +19,26 @@
 </head>
 
 <body>
+
+  <div class = "current-weather">
+    <p id = "currCity"></p>
+    <img id = "currIcon">
+    <p id = "currWeather"></p>
+    <p id = "currTemp"></p>
+  </div>
+
   <p>
     Enter any city name: <input type = "text" id = "city" value = "">
     <br/>
     <button onclick="getWeather()">Submit</button>
   </p>
 
-  <div class = "weather-container">
+  <div class = "input-weather">
     <p class = "city"></p>
     <img class = "icon">
-    <p class = "weather"></p>
-    <p class = "temp"></p>
+    <p id = "weather"></p>
+    <p id = "temp"></p>
+  </div>
 
 </body>
 

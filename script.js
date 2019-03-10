@@ -8,7 +8,7 @@ $.getJSON("https://api.ipdata.co/?api-key=70d2666caac0a3efd237327444448c0c31493c
   var city = data.city;
   // console.log(city);
 
-  document.getElementById("currCity").innerHTML = "You're in " + city + " your current weather is: ";
+  document.getElementById("currCity").innerHTML = "You're in " + city + ", and your current weather is: ";
 
 
   $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=d657bc5415c2c79bd49a746b4e200023",

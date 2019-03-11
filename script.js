@@ -3,10 +3,12 @@
 //doens't work for "Ballerup Municipality"
 
 $.getJSON("https://api.ipdata.co/?api-key=70d2666caac0a3efd237327444448c0c31493cd57ed499ff76c355f7", function(data){
+
+// $.getJSON("http://ip-api.com/json/24.48.0.1", function(data){
   console.log(data);
   // var city = data.time_zone.name.split('/')[1];
-  var city = data.city;
-  // console.log(city);
+  var city = data.city.split(" ")[0];
+  console.log(city);
 
   document.getElementById("currCity").innerHTML = "You're in " + city + ", and your current weather is: ";
 
